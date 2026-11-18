@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="eventos.js" defer=""></script>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <!---
+https://carlosnascimentopoo.github.io/tailwindcss-html-simples/----
+
+
+--->
+
+    <!-- navar -->
+    <header class="flex bg-[#f2f2f2] py-2 fixed w-full">
+      <div class="container mx-auto">
+        <nav class="flex flex-col px-5 md:flex-row md:justify-between">
+          <div class="flex justify-between items-center text-3xl mb-2">
+            <h2 class="text-3xl font-bold">tailwindVUE</h2>
+            <button class="cursor-pointer md:hidden">
+              <i class="fa-solid fa-bars" id="btnMenu"></i>
+            </button>
+          </div>
+
+          <ul
+            class="hidden uppercase text-[12px] font-bold md:flex md:flex-row md:items-center md:gap-4"
+            id="menu"
+          >
+            <li>
+              <a
+                href=""
+                class="block py-2 hover:text-red-300 transition duration-300"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="block py-2 hover:text-red-300 transition duration-300"
+                >serviços</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="block py-2 hover:text-red-300 transition duration-300"
+                >portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="block py-2 hover:text-red-300 transition duration-300"
+                >cadastro</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="block py-2 hover:text-red-300 transition duration-300"
+                >login</a
+              >
+            </li>
+          </ul>
+          <button
+            class="bg-blue-500 text-white uppercase px-6 py-2 font-bold rounded hover:bg-blue-400 cursor-pointer"
+            id="btnContato"
+          >
+            contato
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- / navbar -->
+
+    <!-- apagar pt-12 -->
+    <main class="pt-12">
+      <!-- hero -->
+      <section
+        class="bg-[url('https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_1280.jpg')] bg-cover bg-center text-white h-100 pt-50 pb-30 flex flex-col items-center justify-center p-6 h-screen"
+      >
+        <h1
+          class="font-bold text-[2rem] text-center leading-8 mb-3 max-w-[600px] md:text-5xl leading-12 py-5"
+        >
+          Criando telas interativas com vue e designer com tailwindcss
+        </h1>
+        <div class="flex flex-cols gap-3 justify-center mt-3">
+          <button
+            class="bg-green-500 text-white px-6 py-3 font-bold rounded hover:bg-green-400 cursor-pointer leading-4 capitalize"
+          >
+            Saiba mais
+          </button>
+          <button
+            class="bg-yellow-500 text-white px-6 py-3 font-bold rounded hover:bg-green-400 cursor-pointer leading-4 capitalize"
+          >
+            Faça contato
+          </button>
+        </div>
+      </section>
+
+      <!-- services -->
+
+      <section id="services" class="bg-gray-100 pb-10 md:pb-20">
+        <div class="container">
+          <h2
+            class="text-center text-2xl font-bold pt-10 pb-3 md:text-4xl md:mt-2"
+          >
+            Nossos VUE
+            <span class="text-blue-500">Serviços</span>
+          </h2>
+          <p class="text-center max-w-xl m-auto md:text-[20px] md:mb-12">
+            Sessão dedicada a mostrar o que usamos para podermos desenvolver em
+            vue e as tecnologias. Nosso tripé!
+          </p>
+
+          <div
+            class="flex flex-col gap-5 mt-5 md:grid md:grid-cols-3 min-h-100"
+          >
+            <!-- card 1  -->
+            <div
+              class="h-full flex flex-col justify-center gap-3 bg-white rounded-md shadow py-14 md:py-6 px-6"
+            >
+              <i
+                class="fa-solid fa-mobile-screen md:text-5xl text-4xl text-blue-500"
+              ></i>
+              <h3 class="text-2xl font-semibold">Responsividade</h3>
+              <p class="md:leading-7">
+                Sistemas se adaptaM automaticamente a diferentes tamanhos de
+                tela (como celulares, tablets e desktops), garantindo boa
+                experiência.
+              </p>
+            </div>
+
+            <!-- card 2 -->
+            <div
+              class="h-full flex flex-col justify-center gap-3 bg-white rounded-md shadow py-14 md:py-6 px-6"
+            >
+              <i
+                class="fa-solid fa-paperclip text-4xl md:text-5xl text-blue-500"
+              ></i>
+              <h3 class="text-2xl font-semibold">Componentizar</h3>
+              <p class="md:leading-7">
+                Interface em blocos de código menores, independentes e
+                reutilizáveis. Isso facilita a manutenção, acelera o
+                desenvolvimento.
+              </p>
+            </div>
+
+            <!-- card 3 -->
+            <div
+              class="h-full flex flex-col justify-center gap-3 bg-white rounded-md shadow py-14 md:py-6 px-6"
+            >
+              <i
+                class="fa-brands fa-aws text-4xl md:text-5xl text-blue-500"
+              ></i>
+              <h3 class="text-2xl font-bold">Consumir API</h3>
+              <p class="md:leading-7">
+                conectar sua aplicação front-end a um servidor ou serviço
+                externo para buscar, enviar, atualizar ou excluir dados em tempo
+                real, regra de negócio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-red-400 text-white py-10">
+        <div class="container">
+          <div class="pb-8">
+            <h2 class="font-bold text-2xl text-center my-4">
+              Deseja receber as novidades?
+            </h2>
+            <p class="text-center mb-4">
+              Adicione seu melhor e-mail para receber as nossas novidades
+            </p>
+            <form class="flex max-w-2xl mx-auto">
+              <input
+                type="text"
+                class="bg-white text-black py-3 px-6 border border-gray-200 w-full"
+                placeholder="Meu melhor e-mail"
+              />
+              <button
+                class="bg-green-500 text-white px-6 py-3 font-bold hover:bg-green-400 cursor-pointer leading-4 capitalize"
+              >
+                Saiba mais
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- modal  -->
+    <div
+      class="bg-black fixed top-0 left-0 w-full px-4 PY-3 hidden"
+      id="modalContato"
+    >
+      <section class="bg-gray-400 py-10">
+        <div class="container">
+          <div class="pb-8">
+            <div class="flex justify-between items-center mb-3">
+              <h2 class="font-bold text-2xl text-center my-4">Fazer contato</h2>
+              <button
+                class="bg-red-600 text-white px-6 py-3 font-bold hover:bg-red-500 cursor-pointer leading-4 capitalize"
+                id="btnFecharModal"
+              >
+                Fechar
+              </button>
+            </div>
+
+            <p class="text-center mb-4">
+              Obter informações gerais, fazer críticas ou elógios!
+            </p>
+            <form class="flex flex-col gap-3 max-w-2xl mx-auto">
+              <input
+                type="text"
+                class="bg-white text-black py-3 px-6 border border-gray-200 w-full"
+                placeholder="Nome completo"
+              />
+              <input
+                type="email"
+                class="bg-white text-black py-3 px-6 border border-gray-200 w-full"
+                placeholder="E-mail"
+              />
+              <input
+                type="text"
+                class="bg-white text-black py-3 px-6 border border-gray-200 w-full"
+                placeholder="88-9.8765-4321"
+              />
+              <textarea
+                class="bg-white text-black py-3 px-6 border border-gray-200 w-full h-[8rem] resize-none"
+                placeholder="Mensagem"
+              ></textarea>
+              <button
+                class="bg-green-500 text-white px-6 py-3 font-bold hover:bg-green-400 cursor-pointer leading-4 capitalize"
+              >
+                Enviar mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-black text-white pt-7">
+      <div class="container">
+        <div class="flex flex-col gap-4 md:grid md:grid-cols-4">
+          <div class="">
+            <h4 class="font-bold text-3xl pb-2">tailwindcss</h4>
+          </div>
+
+          <div>
+            <h4 class="font-semibold md:text-2xl">Contatos</h4>
+            <ul>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white"> Rua das Carnaubas, 13 </a>
+              </li>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white"> Sobral,CE - Centro </a>
+              </li>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white"> (88) 9.9783-8872 </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold md:text-2xl">Links úteis</h4>
+            <ul>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white"> Ferramentas </a>
+              </li>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white"> Framework Vue </a>
+              </li>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white"> Documentação </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold md:text-2xl">Redes sociais</h4>
+            <ul>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white">
+                  <i class="fa-brands fa-github"></i>
+                  <span>github</span>
+                </a>
+              </li>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>linkedin</span>
+                </a>
+              </li>
+              <li class="py:1 md:py-2">
+                <a href="" class="text-white">
+                  <i class="fa-solid fa-at"></i>
+                  <span>E-mail</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-center py-3 border-t mt-3">Por Carlos Nascimento</p>
+    </footer>
+  </body>
+</html>
