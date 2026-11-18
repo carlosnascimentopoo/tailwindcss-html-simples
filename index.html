@@ -176,7 +176,32 @@ https://carlosnascimentopoo.github.io/tailwindcss-html-simples/----
         </div>
       </section>
 
-      <section class="bg-red-400 text-white py-10">
+      <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="h-screen flex flex-col gap-4 mx-auto max-w-[500px] items-center justify-center text-center">
+     <img width="96" height="96" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-shadow-tal-revivo.png" alt="external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-shadow-tal-revivo"/>
+
+     <h3 class="font-semibold text-3xl">Faça ao mundo com a tecnologia com vue</h3 class="font-semibold text-3xl">
+
+     <p class="text-lg">Experimente uma ferramenta simples e eficiente</p>
+  <div class="flex gap-3">
+    
+     <button class="rounded-full bg-blue-500 py-3 px-6 font-semibold text-white text-lg">Crie uma conta</button>
+     <button class="rounded-full bg-blue-100 py-3 px-6 font-semibold text-blue-500 text-lg">Acesse</button>
+  </div>
+
+     </section>
+  </body>
+</html>
+
+      <!-- newsletter -->
+      <section class="bg-blue-800 text-white py-10">
         <div class="container">
           <div class="pb-8">
             <h2 class="font-bold text-2xl text-center my-4">
@@ -204,16 +229,21 @@ https://carlosnascimentopoo.github.io/tailwindcss-html-simples/----
 
     <!-- modal  -->
     <div
-      class="bg-[#f2f2f2] flex flex-col items-center justify-center fixed top-0 left-0 w-full h-screen p-4"
+      class="hidden bg-[#f2f2f2] flex flex-col items-center justify-center fixed top-0 left-0 w-full h-screen p-4"
       id="modalContato"
     >
-      <div class="bg-gray-200 rounded-lg py-2 md:max-w-2xl w-full mx-auto px-3">
+      <!-- container com os campos do formulário -->
+      <div
+        class="bg-gray-200 rounded-lg py-2 md:px-10 md:max-w-2xl w-full mx-auto px-3 overflow-y-auto relative"
+      >
         <div class="">
           <div class="pb-8">
-            <div class="flex justify-between items-center">
-              <h2 class="font-bold text-2xl text-center my-4">Fazer contato</h2>
+            <div>
+              <h2 class="font-bold text-2xl text-center my-4 md:text-4xl">
+                Fazer contato
+              </h2>
               <button
-                class="bg-red-600 text-white px-6 py-3 font-bold hover:bg-red-500 cursor-pointer leading-4 capitalize"
+                class="bg-red-600 text-white px-6 py-3 font-bold hover:bg-red-500 cursor-pointer leading-4 capitalize absolute right-2 top-2"
                 id="btnFecharModal"
               >
                 Fechar
@@ -244,7 +274,7 @@ https://carlosnascimentopoo.github.io/tailwindcss-html-simples/----
 
               <textarea
                 placeholder="Mensagem"
-                class="rounded-md border border-gray-200 bg-white text-black p-3 w-full"
+                class="rounded-md border border-gray-200 bg-white text-black p-3 w-full resize-none h-32"
               ></textarea>
 
               <button
