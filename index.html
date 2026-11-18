@@ -204,13 +204,13 @@ https://carlosnascimentopoo.github.io/tailwindcss-html-simples/----
 
     <!-- modal  -->
     <div
-      class="bg-black fixed top-0 left-0 w-full px-4 PY-3 hidden"
+      class="bg-[#f2f2f2] flex flex-col items-center justify-center fixed top-0 left-0 w-full h-screen p-4"
       id="modalContato"
     >
-      <section class="bg-gray-400 py-10">
-        <div class="container">
+      <div class="bg-gray-200 rounded-lg py-2 md:max-w-2xl w-full mx-auto px-3">
+        <div class="">
           <div class="pb-8">
-            <div class="flex justify-between items-center mb-3">
+            <div class="flex justify-between items-center">
               <h2 class="font-bold text-2xl text-center my-4">Fazer contato</h2>
               <button
                 class="bg-red-600 text-white px-6 py-3 font-bold hover:bg-red-500 cursor-pointer leading-4 capitalize"
@@ -223,26 +223,30 @@ https://carlosnascimentopoo.github.io/tailwindcss-html-simples/----
             <p class="text-center mb-4">
               Obter informações gerais, fazer críticas ou elógios!
             </p>
-            <form class="flex flex-col gap-3 max-w-2xl mx-auto">
+            <form class="grid grid-cols-1 gap-3">
               <input
                 type="text"
-                class="bg-white text-black py-3 px-6 border border-gray-200 w-full"
                 placeholder="Nome completo"
+                class="rounded-md border border-gray-200 bg-white text-black py-3 px-6 w-full"
               />
+
               <input
                 type="email"
-                class="bg-white text-black py-3 px-6 border border-gray-200 w-full"
                 placeholder="E-mail"
+                class="rounded-md border border-gray-200 bg-white text-black py-3 px-3 w-full"
               />
+
               <input
-                type="text"
-                class="bg-white text-black py-3 px-6 border border-gray-200 w-full"
-                placeholder="88-9.8765-4321"
+                type="tel"
+                placeholder="88-9.9876-5432"
+                class="rounded-md border border-gray-200 bg-white text-black py-3 px-3 w-full"
               />
+
               <textarea
-                class="bg-white text-black py-3 px-6 border border-gray-200 w-full h-[8rem] resize-none"
                 placeholder="Mensagem"
+                class="rounded-md border border-gray-200 bg-white text-black p-3 w-full"
               ></textarea>
+
               <button
                 class="bg-green-500 text-white px-6 py-3 font-bold hover:bg-green-400 cursor-pointer leading-4 capitalize"
               >
@@ -251,7 +255,7 @@ https://carlosnascimentopoo.github.io/tailwindcss-html-simples/----
             </form>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <footer class="bg-black text-white pt-7">
