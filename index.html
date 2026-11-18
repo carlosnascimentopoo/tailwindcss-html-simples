@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  
+  <!-- navar -->
+  <header class="flex bg-[#f2f2f2] py-2 fixed w-full">
+    <div class="container">
+      <nav class="flex flex-col px-5 md:flex-row md:justify-between">
+        <div class="flex justify-between items-center text-3xl mb-2">
+          <h2 class="text-3xl font-bold">tailwindVUE</h2>
+          <button class="cursor-pointer md:hidden">
+            <i class="fa-solid fa-bars" id="btnMenu"></i>             
+            </button>
+        </div>
+
+        <ul class="hidden uppercase text-[12px] font-bold md:flex md:flex-row md:items-center md:gap-4" id="menu">
+          <li>
+            <a href="" class="block py-2 hover:text-red-300 transition duration-300">home</a>
+          </li>
+          <li>
+            <a href="" class="block py-2 hover:text-red-300 transition duration-300">serviços</a>
+          </li>
+          <li>
+            <a href="" class="block py-2 hover:text-red-300 transition duration-300">portfolio</a>
+          </li>
+          <li>
+            <a href="" class="block py-2 hover:text-red-300 transition duration-300">contatos</a>
+          </li>
+          <li>
+            <a href="" class="block py-2 hover:text-red-300 transition duration-300">cadastro</a>
+          </li>
+          <li>
+            <a href="" class="block py-2 hover:text-red-300 transition duration-300">login</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- / navbar -->
+
+  <main>
+
+
+    <section class="bg-[url('https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_1280.jpg')] bg-cover bg-center text-white h-90 pt-20 
+       flex flex-col items-center justify-center p-6">
+
+      <h1 class="font-bold text-[2rem] text-center leading-8 mb-3 max-w-[600px]">Criando telas interativas com vue e
+        designer com tailwindcss</h1>
+      <div class="flex flex-cols gap-3 justify-center mt-3">
+        <button class="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-400 cursor-pointer leading-4 capitalize">
+          Saiba mais
+        </button>
+        <button class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-green-400 cursor-pointer leading-4 capitalize">
+          Faça contato
+        </button>
+      </div>
+    </section>
+
+    <section id="services" class="bg-gray-100 pb-10 md:pb-20">
+      <div class="container">
+        <h2 class="text-center text-2xl font-bold pt-10 pb-3 md:text-4xl md:mt-2">Nossos VUE
+          <span class="text-blue-500">Serviços</span></h2>
+        <p class="text-center 
+      max-w-xl m-auto md:text-[20px] md:mb-12">Sessão dedicada a mostrar o que usamos para podermos desenvolver em vue
+          e as tecnologias. Nosso tripé!</p>
+
+        <div class="flex flex-col gap-5 mt-5 md:grid md:grid-cols-3">
+          <!-- card 1  -->
+          <div class="h-full flex flex-col gap-3 bg-white rounded-md shadow py-14 md:py-6 px-6">
+            <i class="fa-solid fa-mobile-screen text-4xl text-blue-500"></i>
+            <h3 class="text-2xl font-semibold">Responsividade</h3>
+            <p>Sistemas se adaptaM automaticamente a diferentes tamanhos de tela (como celulares, tablets e desktops),
+              garantindo boa experiência.</p>
+          </div>
+
+
+          <!-- card 2 -->
+          <div class="h-full flex flex-col gap-3 bg-white rounded-md shadow py-14 md:py-6 px-6">
+            <i class="fa-solid fa-paperclip text-4xl text-blue-500"></i>
+            <h3 class="text-2xl font-semibold">Componentizar</h3>
+            <p>Interface em blocos de código menores, independentes e reutilizáveis. Isso facilita a manutenção, acelera
+              o desenvolvimento.</p>
+          </div>
+
+
+          <!-- card 3-->
+          <div class="h-full flex flex-col gap-3 bg-white rounded-md shadow py-14 md:py-6 px-6">
+            <i class="fa-brands fa-aws text-4xl text-blue-500"></i>
+            <h3 class="text-2xl font-bold">Consumir API</h3>
+            <p>conectar sua aplicação front-end a um servidor ou serviço externo para buscar, enviar, atualizar ou
+              excluir dados em tempo real, regra de negócio.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+  </main>
+   
+   <footer class="bg-black text-white pt-7">
+    <div class="container">
+      <div class="flex flex-col gap-4 md:grid md:grid-cols-4">
+      <div class="">
+        <h4 class="font-bold text-3xl pb-2">tailwindcss</h4>
+      </div>
+
+      <div>
+        <h4 class="font-semibold">Contatos</h4>
+        <ul>
+          <li>
+            <a href="" class="text-white">
+              Rua das Carnaubas, 13
+            </a>
+          </li>
+          <li>
+            <a href="" class="text-white">
+              Sobral,CE - Centro
+            </a>
+          </li>
+          <li>
+            <a href="" class="text-white">
+              (88) 9.9783-8872
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+       <div>
+        <h4 class="font-semibold">Links úteis</h4>
+        <ul>
+          <li>
+            <a href="" class="text-white">
+              Ferramentas
+            </a>
+          </li>
+          <li>
+            <a href="" class="text-white">
+              Framework Vue
+            </a>
+          </li>
+          <li>
+            <a href="" class="text-white">
+              Documentação
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+       <div>
+        <h4 class="font-semibold">Redes sociais</h4>
+        <ul>
+          <li>
+            <a href="" class="text-white">
+              <i class="fa-brands fa-github"></i>
+              <span>github</span>
+            </a>
+          </li>
+          <li>
+             <a href="" class="text-white">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>linkedin</span>
+            </a>
+          </li>
+          <li>
+           <a href="" class="text-white">
+              <i class="fa-solid fa-at"></i>
+              <span>E-mail</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <p class="text-center py-3 border-t mt-3">Por Carlos Nascimento</p>
+  </footer>
+
+</body>
+
+</html>
